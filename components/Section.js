@@ -6,10 +6,11 @@ export default function Section({ children, ...props }) {
         </section>
                     <style jsx>{`
                     section{
+                        position: sticky;
                         background-color: ${props.backgroundColor};
                         min-height: 100vh;
                         width: 100%;
-                        border: 1px solid limegreen;
+                        color: ${props.color};
                     }
             `}</style>
             </>
