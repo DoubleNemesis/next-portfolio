@@ -7,9 +7,9 @@ export default function Footer(){
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Created in NextJS by{' '}
           <span className={styles.logo}>
-            Logo
+            ThomasPChant
           </span>
         </a>
       </footer>

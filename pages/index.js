@@ -19,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Header/>
+    <main className={styles.main}>
         <Section 
         backgroundColor="midnightblue"
         color="white">
@@ -41,7 +42,7 @@ export default function Home() {
           <About/>
           </Section>
 
-      <main className={styles.main}>
+
       </main>
 
       <Footer/>

@@ -18,7 +18,7 @@ export default function Section({ children, ...props }) {
                         min-height: 100vh;
                         height: 100vh;
                         width: 100%;
-                        color: ${props.color};
+                        color: ${props.color} || green;
                     }
                     }
             `}</style>

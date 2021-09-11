@@ -86,3 +86,50 @@ a {
     transform: rotate(0deg);
   }
 }
+
+.item-title{
+  color: pink;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-box {
+  background-color: transparent;
+  min-width: 350px;
+  min-height: 300px;
+  perspective: 1000px;
+  /* display: flex;
+  justify-content: center;
+  padding-top: 3px; */
+  user-select: none;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front {
+  color: black;
+}
+.flip-box-front img{
+  max-width: 350px;
+}
+
+.flip-box-back {
+  color: black;
+  transform: rotateY(180deg);
+}
