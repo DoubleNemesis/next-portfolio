@@ -3,7 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Section from '../components/Section'
-import Hero from '../components/Hero'
+import Footer from '../components/Footer'
+import Hero from '../section-blocks/Hero'
+import Portfolio from '../section-blocks/Portfolio'
+import About from '../section-blocks/About'
+import History from '../section-blocks/History'
 
 export default function Home() {
   return (
@@ -22,29 +26,25 @@ export default function Home() {
           </Section>
         <Section 
         backgroundColor="white"
-        color="#333">
-          2
+        color="#333"
+        height="unset">
+          <Portfolio/>
           </Section>
         <Section 
         backgroundColor="midnightblue"
         color="white">
-          3
+          <History/>
           </Section>
+        <Section 
+        backgroundColor="white"
+        color="#333">
+          <About/>
+          </Section>
+
       <main className={styles.main}>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer/>
     </div>
     </>
   )

@@ -6,6 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 h1{
@@ -34,4 +35,54 @@ a {
 
 .emphatic{
   color: skyblue;
+}
+
+@keyframes logoUp{
+  from{
+      margin-top: 2rem;
+  }
+  to{
+      margin-top: 1rem;
+  }
+}
+@keyframes logoDown{
+  from{
+      margin-top: 1rem;
+  }
+  to{
+      margin-top: 2rem;
+  }
+}
+@keyframes menuIn{
+  from{
+      opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes menuOut{
+  from{
+      opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes burgerOpen{
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg);
+  }
+}
+@keyframes burgerClose{
+  from{
+      transform: rotate(90deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
 }
