@@ -3,7 +3,7 @@ export default function Hero() {
         <>
             <div className="hero-container">
                 <h1>Thomas P Chant</h1>
-                <h2>Web Debeloper</h2>
+                <h2>Web Developer</h2>
                 <p>Tech Stack</p>
                 <button>View Projects</button>
             </div>
