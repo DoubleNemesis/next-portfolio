@@ -1,10 +1,12 @@
+import TechStack from '../widgets/TechStack'
+
 export default function Hero() {
     return (
         <>
             <div className="hero-container">
                 <h1>Thomas P Chant</h1>
                 <h2>Web Developer</h2>
-                <p>Tech Stack</p>
+                <TechStack/>
                 <button>View Projects</button>
             </div>
             <style jsx>{`
