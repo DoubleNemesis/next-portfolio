@@ -6,7 +6,7 @@ export default function Hero() {
             <div className="hero-container">
                 <h1>Thomas P Chant</h1>
                 <h2>Web Developer</h2>
-                <TechStack/>
+                <TechStack />
                 <button>View Projects</button>
             </div>
             <style jsx>{`
@@ -19,7 +19,10 @@ export default function Hero() {
                 align-items: center;
                 justify-content: center;
                 color: white;
-            }           
+            }
+            .hero-container h1 {
+                 font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+            }          
             `}</style>
         </>
     )
