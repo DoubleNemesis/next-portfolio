@@ -21,7 +21,7 @@ h3{
 }
 
 p{
-  font-family: 'Montserrat';
+  font-family: 'Open Sans';
 }
 
 a {
@@ -34,7 +34,7 @@ a {
 }
 
 .emphatic{
-  color: skyblue;
+  color: #00acea;
 }
 
 @keyframes logoUp{
@@ -134,6 +134,8 @@ a {
 .flip-box-back {
   color: black;
   transform: rotateY(180deg);
+  padding: 1em;
+  font-family: 'Open Sans';
 }
 
 .portfolio-text{

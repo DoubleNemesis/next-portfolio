@@ -33,7 +33,7 @@ let data = {
         'projectType': 'Commercial Website',
         'projectUrl': 'http://www.ExeterEnglishOnline.com',
         'imageUrl': 'http://tomsclassroom.com/EEO.png',
-        'flipsSideText': 'A website for an online language school. The design is a collaborative effort. I worked mostly on the Wordpress backend and javascript.',
+        'flipsSideText': 'A website for an online language school. The design is a collaborative effort. I worked mostly on the Wordpress backend and wrote JavaScript for the frontend.',
         'githubLink' : '',
     },
     {

@@ -13,6 +13,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [menuAnimation, setMenuAnimation] = useState('unset')
     const [burgerAnimation, setBurgerAnimation] = useState('unset')
+    const [headerAnimation, setHeaderAnimation] = useState('unset')
 
     function getScrollStatus() {
         const amountScrolled = Math.round(window.scrollY)
@@ -50,6 +51,7 @@ export default function Header() {
     return (
         <header>
             <div className="container">
+                <div className="container-inner"></div>
                 <div className="logo-container">
                     <h1>Thomas<span className="emphatic">P</span>Chant</h1>
                     <h2><span className="emphatic">Web Developer</span></h2>
@@ -59,6 +61,7 @@ export default function Header() {
                     <p>Hire Me</p>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
+
             </div>
             <div className="hidden-menu">
                 <div className="hidden-menu-burger-container">
@@ -74,7 +77,7 @@ export default function Header() {
             </div>
             <style jsx>{`
 .container{
-    background-color: midnightblue;
+    background-color: transparent;
     width: 100%;
     position: fixed;
     top: 0;
@@ -84,6 +87,17 @@ export default function Header() {
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
+    border-bottom: 1px solid #00acea;
+}
+
+.container-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: ${!isScrolled ? 'transparant' : 'midnightblue' } ;
+    z-index: -1;
 }
 
 .hidden-menu{
@@ -156,6 +170,7 @@ export default function Header() {
     background-color: transparent;
     fill: white; 
     animation: ${burgerAnimation} 1s forwards;
+    cursor: pointer;
 }
 
 

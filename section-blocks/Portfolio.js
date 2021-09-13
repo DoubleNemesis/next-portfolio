@@ -17,10 +17,6 @@ export default function Portfolio() {
                     display: flex;
                     flex-direction: column;
                 }
-                .title{
-                    font-size: 1rem;
-                    color: red;
-                }
             `}</style>
             </>
         )
@@ -77,7 +73,6 @@ export default function Portfolio() {
                 display: grid;
                 grid-gap: 0rem;
                 grid-template-columns: repeat(auto-fit, minmax(379.8px, 1fr));
-                /* overflow: hidden; */
                 padding: 0;
             } 
             `}</style>
