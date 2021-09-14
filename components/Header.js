@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import SocialIcons from '../widgets/SocialIcons'
 
 const burgerIcon = <svg viewBox="0 0 100 80" width="40" height="40" >
     <rect width="100" height="6"></rect>
@@ -57,7 +58,7 @@ export default function Header() {
                     <h2><span className="emphatic">Web Developer</span></h2>
                 </div>
                 <div className="header-text-container">
-                    <p>Social Links</p>
+                    <SocialIcons/>
                     <p>Hire Me</p>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
@@ -172,7 +173,6 @@ export default function Header() {
     animation: ${burgerAnimation} 1s forwards;
     cursor: pointer;
 }
-
 
 .burger:hover,
 .burger-open:hover{
