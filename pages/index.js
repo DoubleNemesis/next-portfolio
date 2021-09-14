@@ -33,12 +33,14 @@ export default function Home() {
           </Section>
         <Section 
         backgroundColor="midnightblue"
-        color="white">
+        color="white"
+        height="unset">
           <History/>
           </Section>
         <Section 
         backgroundColor="white"
-        color="#333">
+        color="#333"
+        height="unset">
           <About/>
           </Section>
 

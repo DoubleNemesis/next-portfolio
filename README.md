@@ -1,18 +1,10 @@
-Fonts
-    Montserrat
-    Open Sans / Poppins
+1 photo block of 4 images, 1 on mpbile, 2 on tablet
+footer
+menu items desktop
+menu mobile
 
-Font sizes
-    h1
-    h2
-    h3
-    p
 
-Colours
-
-Components
-
-header
+check links
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
