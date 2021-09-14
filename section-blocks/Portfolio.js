@@ -32,7 +32,6 @@ export default function Portfolio() {
 
     const projectsToDisplay = data['projects'].map((item, index) => {
         return (
-            <>
                 <ProjectItem key={item.key}>
                     <div className="flip-box" aria-haspopup="true">
                         <div className="flip-box-inner" >
@@ -54,7 +53,6 @@ export default function Portfolio() {
                         </div>
                     </ProjectItemText>
                 </ProjectItem>
-            </>
         )
 
     })
@@ -62,7 +60,7 @@ export default function Portfolio() {
 
     return (
         <>
-            <div className="portfolio-container">
+            <div className="portfolio-container" id="portfolio-scroll-target">
                 {projectsToDisplay}
             </div>
             <style jsx>{`

@@ -1,4 +1,5 @@
 import TechStack from '../widgets/TechStack'
+import ScrollButton from '../utils/ScrollButton'
 
 export default function Hero() {
     return (
@@ -7,7 +8,10 @@ export default function Hero() {
                 <h1>Thomas P Chant</h1>
                 <h2>Web Developer</h2>
                 <TechStack />
-                <button>View Projects</button>
+                <ScrollButton 
+                destination="portfolio-scroll-target"
+                text="View Projects"
+                />
             </div>
             <style jsx>{`
 
