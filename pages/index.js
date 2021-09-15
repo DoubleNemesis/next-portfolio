@@ -8,6 +8,7 @@ import Hero from '../section-blocks/Hero'
 import Portfolio from '../section-blocks/Portfolio'
 import About from '../section-blocks/About'
 import History from '../section-blocks/History'
+import PhotoBlock from '../section-blocks/PhotoBlock'
 
 export default function Home() {
   return (
@@ -37,9 +38,15 @@ export default function Home() {
         height="unset">
           <History/>
           </Section>
-        <Section 
+        {/* <Section 
         backgroundColor="white"
-        color="#333"
+        color="#141414"
+        height="unset"> */}
+          <PhotoBlock/>
+          {/* </Section> */}
+        <Section 
+        backgroundColor="midnightblue"
+        color="white"
         height="unset">
           <About/>
           </Section>

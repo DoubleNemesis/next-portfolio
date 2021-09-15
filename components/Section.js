@@ -10,7 +10,7 @@ export default function Section({ children, ...props }) {
                         min-height: ${props.height || '100vh'};
                         height: ${props.height || '100vh'};
                         width: 100%;
-                        /* color: ${props.color}; */
+                        color: ${props.color || 'green'};
                     }
                     @media(min-width: 1025px){
                         section{
@@ -19,7 +19,6 @@ export default function Section({ children, ...props }) {
                         align-items: center;
                         justify-content: center;
                         background-color: ${props.backgroundColor};
-                        min-height: 100vh;
                         min-height: ${props.height || '100vh'};
                         height: ${props.height || '100vh'};
                         width: 100%;

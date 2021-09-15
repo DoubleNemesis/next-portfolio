@@ -150,8 +150,11 @@ export default function Header() {
     display: flex;
     gap: 3rem;
     align-items: center;
+    justify-content: right;
     margin-right: 2rem;
 }
+
+
 .header-text-container > p {
     text-transform: uppercase;
     color: white;
@@ -160,6 +163,11 @@ export default function Header() {
 }
 
 @media(min-width: 1025px){
+    .header-text-container{
+    gap: 3rem;
+    align-items: center;
+    margin-right: 2rem;
+}
     .header-text-container > p {
     display: inline;
 }  

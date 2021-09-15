@@ -18,7 +18,7 @@ export default function About() {
                 width: 100%;
                 align-items: flex-start;
                 justify-content: center;
-                color: #141414;
+                color: white;
                 /* border: 1px solid orange; */
                 padding: 0rem 2rem;
             }

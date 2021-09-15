@@ -14,6 +14,8 @@ export default function SrollButton(props){
             border: none;
             color: white;
             cursor: pointer;
+            margin-top: 6rem;
+            font-size: 1rem;
         }
         .scroll-btn:hover{
             color: #00acea;

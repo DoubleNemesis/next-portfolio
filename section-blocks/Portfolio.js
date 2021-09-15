@@ -70,9 +70,15 @@ export default function Portfolio() {
                 margin: 0 auto;
                 display: grid;
                 grid-gap: 0rem;
+                grid-template-columns: repeat(auto-fit, minmax(319.8px, 1fr));
+                padding: 0;
+            } 
+            @media(min-width: 1025px){
+                .portfolio-container{
                 grid-template-columns: repeat(auto-fit, minmax(379.8px, 1fr));
                 padding: 0;
             } 
+}
             `}</style>
         </>
     )
