@@ -1,7 +1,8 @@
-1 photo block of 4 images, 1 on mpbile, 2 on tablet
 footer
-menu items desktop
-menu mobile
+contact page
+hire me page
+wire up links 
+
 
 
 check links

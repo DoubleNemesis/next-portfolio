@@ -54,7 +54,12 @@ export default function AnimatedText({message, bgColor}){
         .photo-block-text h3{
             font-family: cursive;
             font-weight: 100;
+            font-size: 1rem;
+        }
+        @media(min-width: 1025px){
+            .photo-block-text h3{
             font-size: 1.3rem;
+        } 
         }
         `}</style>
         </>

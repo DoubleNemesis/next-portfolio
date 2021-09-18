@@ -7,7 +7,7 @@ const burgerIcon = <svg viewBox="0 0 100 80" width="40" height="40" >
     <rect y="60" width="100" height="6"></rect>
 </svg>
 
-export default function Header() {
+export default function Header({isMobile}) {
 
     const [isScrolled, setIsScrolled] = useState(false)
     const [logoAnimation, setLogoAnimation] = useState('unset')
@@ -58,8 +58,12 @@ export default function Header() {
                     <h2><span className="emphatic">Web Developer</span></h2>
                 </div>
                 <div className="header-text-container">
-                    <SocialIcons/>
+                {!isMobile ? <SocialIcons/> : null}
                     <p>Hire Me</p>
+                    <p>Portfolio</p>
+                    <p>Work History</p>
+                    <p>About</p>
+                    <p>Contact</p>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
 
@@ -68,12 +72,13 @@ export default function Header() {
                 <div className="hidden-menu-burger-container">
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
+                <SocialIcons/>
                 <ul>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
+                    <li>Hire me</li>
+                    <li>Portfolio</li>
+                    <li>Work History</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
             </div>
             <style jsx>{`
@@ -111,6 +116,12 @@ export default function Header() {
         display: ${isMenuOpen ? 'inline' : 'none'};
         animation: ${menuAnimation} 1s forwards;
         z-index: 2;
+        color: white;
+        font-family: 'Open Sans';
+        padding-left: 3rem;
+    }
+.hidden-menu ul{
+         line-height: 180%;   
     }
 .hidden-menu-burger-container{
     display: flex;

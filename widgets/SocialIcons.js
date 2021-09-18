@@ -10,7 +10,8 @@ export default function SocialIcons(props) {
             </div>
             <style jsx>{`
         .social-icons-container{
-            display: none;
+            display: flex;
+            gap: 1rem;
         }
         p{
             color: white;
@@ -21,6 +22,9 @@ export default function SocialIcons(props) {
         .fab{
             color: white;
             font-size: 1.2rem;
+        }
+        .fab:hover{
+            color: skyblue;
         }
         @media(min-width: 1025px){
             .social-icons-container{

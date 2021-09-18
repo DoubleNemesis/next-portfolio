@@ -46,7 +46,7 @@ useEffect(() => {
         <meta name="description" content="Thomas Chant Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Header/>
+    <Header isMobile={isMobile}/>
     <main className={styles.main}>
         <Section 
         backgroundColor="midnightblue"
