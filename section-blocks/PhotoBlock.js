@@ -3,15 +3,10 @@ import Image from 'next/image'
 import AnimatedText from '../widgets/AnimatedText'
 import {Block} from '../widgets/AnimatedText'
 import trees from '../public/trees.jpg'
-import blue from '../public/blue.png'
-import purple from '../public/purple.png'
-import green from '../public/green.png'
 import tom from '../public/tom.png'
 import cygnets from '../public/cygnets.jpg'
 
-
-
-export default function PhotoBlock() {
+export default function PhotoBlock(props) {
 
     const [isPhotoBlockInView, setIsPhotoBlockInView] = useState(false)
 
@@ -36,7 +31,7 @@ export default function PhotoBlock() {
 
     return (<>
         <div className="photo-block-holder" id="blocks">
-            <Image src={trees} />
+            {!props.isMobile ? <Image src={trees} /> : null}
             <Image src={cygnets} />
             <Image src={tom} />
             {isPhotoBlockInView ? <AnimatedText bgColor="skyblue" message="This is me trying to smile without looking creepy! When I'm not coding, I love wildlife and nature photography." /> : <Block bgColor="skyblue"/>}
@@ -45,7 +40,16 @@ export default function PhotoBlock() {
         .photo-block-holder{
             width: 100%;
             display: flex;
+            flex-direction: column;
         }
+        @media(min-width: 700px){
+            .photo-block-holder{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        } 
+        }
+
         `}</style>
     </>
 

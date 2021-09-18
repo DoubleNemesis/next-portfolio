@@ -28,7 +28,6 @@ export default function AnimatedText({message, bgColor}){
                 let counter=0
                 const interval = setInterval(()=>{
                     setMess(prev => prev + message[counter])
-                    console.log(message[counter]);
                     counter++
                     if (counter >= message.length){
                         clearInterval(interval)

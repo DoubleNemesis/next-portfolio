@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -11,6 +12,32 @@ import History from '../section-blocks/History'
 import PhotoBlock from '../section-blocks/PhotoBlock'
 
 export default function Home() {
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  const mobileWidth = 700;
+
+  useEffect(()=>{
+    console.log(window.screen.width)
+    if(window.screen.width <= mobileWidth){
+      setIsMobile(true)
+    }
+})
+
+useEffect(() => {
+    function handleResize() {
+      // console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
+      if(window.innerWidth <= mobileWidth){
+        setIsMobile(true)
+      }
+      else{
+        setIsMobile(false)
+      }
+}
+
+    window.addEventListener('resize', handleResize)
+  })
+
   return (
     <>
        <div className={styles.container}>
@@ -38,12 +65,7 @@ export default function Home() {
         height="unset">
           <History/>
           </Section>
-        {/* <Section 
-        backgroundColor="white"
-        color="#141414"
-        height="unset"> */}
-          <PhotoBlock/>
-          {/* </Section> */}
+          <PhotoBlock isMobile={isMobile}/>
         <Section 
         backgroundColor="midnightblue"
         color="white"
