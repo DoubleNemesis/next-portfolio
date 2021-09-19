@@ -60,9 +60,10 @@ export default function Portfolio() {
 
     return (
         <>
-            <div className="portfolio-container" id="portfolio-scroll-target">
+            <div className="portfolio-container" id="portfolio-scroll-target-two">
                 {projectsToDisplay}
             </div>
+            <div id="history-scroll-target"></div>
             <style jsx>{`
             .portfolio-container{
                 position: relative;

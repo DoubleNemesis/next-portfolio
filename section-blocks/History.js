@@ -19,7 +19,9 @@ export default function History() {
                 <ul>
                     <li>Organising high-level classes and excursions/activities for groups throughout the Southwest. </li>
                 </ul>
+                <div id="about-scroll-target"></div>
             </div>
+            
             <style jsx>{`
             .history-container{
                 display: flex;
@@ -30,7 +32,7 @@ export default function History() {
                 justify-content: center;
                 color: white;
                 /* border: 1px solid orange; */
-                padding: 0 2rem;
+                padding: 2rem 2rem;
             }
             .history-container h1{
                 font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
@@ -42,7 +44,7 @@ export default function History() {
             @media(min-width:1025px){
                 .history-container{
                 width: 60%;
-                padding: 3rem 2rem;
+                padding: 5rem 2rem;
             }
 
         ul{

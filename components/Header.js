@@ -32,6 +32,8 @@ export default function Header({isMobile}) {
 
     useEffect(() => {
         document.addEventListener('scroll', getScrollStatus)
+        const hiddenMenu = document.getElementById('hidden-menu-list')
+        hiddenMenu.addEventListener('click', rotateBurger)
     })
 
     function rotateBurger(){
@@ -59,11 +61,11 @@ export default function Header({isMobile}) {
                 </div>
                 <div className="header-text-container">
                 {!isMobile ? <SocialIcons/> : null}
-                    <p>Hire Me</p>
-                    <p>Portfolio</p>
-                    <p>Work History</p>
-                    <p>About</p>
-                    <p>Contact</p>
+                    <a href="/">Hire Me</a>
+                    <a href="#portfolio-scroll-target">Portfolio</a>
+                    <a href="#history-scroll-target">Work History</a>
+                    <a href="#about-scroll-target">About</a>
+                    <a href="/">Contact</a>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
 
@@ -73,12 +75,12 @@ export default function Header({isMobile}) {
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
                 <SocialIcons/>
-                <ul>
-                    <li>Hire me</li>
-                    <li>Portfolio</li>
-                    <li>Work History</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                <ul id="hidden-menu-list">
+                    <li><a href="/">Hire Me</a></li>
+                    <li><a href="#portfolio-scroll-target">Portfolio</a></li>
+                    <li><a href="#history-scroll-target">Work History</a></li>
+                    <li><a href="#about-scroll-target">About</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
             </div>
             <style jsx>{`
@@ -163,10 +165,12 @@ export default function Header({isMobile}) {
     align-items: center;
     justify-content: right;
     margin-right: 2rem;
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
 }
 
 
-.header-text-container > p {
+.header-text-container a {
     text-transform: uppercase;
     color: white;
     font-size: clamp(.8rem, -0.875rem + 6.333vw, .8rem);
@@ -179,7 +183,7 @@ export default function Header({isMobile}) {
     align-items: center;
     margin-right: 2rem;
 }
-    .header-text-container > p {
+    .header-text-container > a {
     display: inline;
 }  
 
