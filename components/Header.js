@@ -61,11 +61,12 @@ export default function Header({isMobile}) {
                 </div>
                 <div className="header-text-container">
                 {!isMobile ? <SocialIcons/> : null}
-                    <a href="/">Hire Me</a>
-                    <a href="#portfolio-scroll-target">Portfolio</a>
-                    <a href="#history-scroll-target">Work History</a>
-                    <a href="#about-scroll-target">About</a>
-                    <a href="#contact-scroll-target">Contact</a>
+                    <a href="/#hire-scroll-target">Hire Me</a>
+                    <a href="/#portfolio-scroll-target">Portfolio</a>
+                    <a href="/vlog">Vlog</a>
+                    <a href="/#history-scroll-target">Work History</a>
+                    <a href="/#about-scroll-target">About</a>
+                    <a href="/#contact-scroll-target">Contact</a>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
 
@@ -76,11 +77,12 @@ export default function Header({isMobile}) {
                 </div>
                 <SocialIcons/>
                 <ul id="hidden-menu-list">
-                    <li><a href="/">Hire Me</a></li>
-                    <li><a href="#portfolio-scroll-target">Portfolio</a></li>
-                    <li><a href="#history-scroll-target">Work History</a></li>
-                    <li><a href="#about-scroll-target">About</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="/#hire-scroll-target">Hire Me</a></li>
+                    <li><a href="/#portfolio-scroll-target">Portfolio</a></li>
+                    <li><a href="/vlog">Vlog</a></li>
+                    <li><a href="/#history-scroll-target">Work History</a></li>
+                    <li><a href="/#about-scroll-target">About</a></li>
+                    <li><a href="/#contact-scroll-target">Contact</a></li>
                 </ul>
             </div>
             <style jsx>{`
