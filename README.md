@@ -1,11 +1,11 @@
-footer
-contact page
-hire me page
-wire up links 
-reply emma
-
-
-
+contact section
+hire me section
+wire up social links
+tidy up mobile nav on about / work more vertical padding
+hero image
+blog page
+photo block text change
+mobile photoblocks
 
 check links
 

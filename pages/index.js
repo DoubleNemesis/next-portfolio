@@ -10,6 +10,8 @@ import Portfolio from '../section-blocks/Portfolio'
 import About from '../section-blocks/About'
 import History from '../section-blocks/History'
 import PhotoBlock from '../section-blocks/PhotoBlock'
+import Contact from '../section-blocks/Contact'
+import HireMe from '../section-blocks/HireMe'
 
 export default function Home() {
 
@@ -71,6 +73,18 @@ useEffect(() => {
         color="white"
         height="unset">
           <About/>
+          </Section>
+        <Section 
+        backgroundColor="white"
+        color="#333"
+        height="unset">
+          <Contact/>
+          </Section>
+        <Section 
+        backgroundColor="midnightblue"
+        color="white"
+        height="unset">
+          <HireMe/>
           </Section>
 
 

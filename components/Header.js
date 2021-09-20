@@ -65,7 +65,7 @@ export default function Header({isMobile}) {
                     <a href="#portfolio-scroll-target">Portfolio</a>
                     <a href="#history-scroll-target">Work History</a>
                     <a href="#about-scroll-target">About</a>
-                    <a href="/">Contact</a>
+                    <a href="#contact-scroll-target">Contact</a>
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
 
