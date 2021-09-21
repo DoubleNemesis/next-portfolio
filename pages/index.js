@@ -28,7 +28,6 @@ export default function Home() {
 
 useEffect(() => {
     function handleResize() {
-      // console.log('resized to: ', window.innerWidth, 'x', window.innerHeight)
       if(window.innerWidth <= mobileWidth){
         setIsMobile(true)
       }

@@ -21,8 +21,14 @@ export default function HireMe() {
             padding: 2rem 2rem;
             margin: 0 auto;
             border: 1px solid white;
-            max-width: 50%;
+            max-width: 90%;
             margin: 2rem;
+        }
+        @media(min-width:1025px){
+            .hire-container{
+            display: flex;
+            max-width: 50%;
+        } 
         }
         ul{
             font-size: 1rem;

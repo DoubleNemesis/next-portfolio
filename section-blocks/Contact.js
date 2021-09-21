@@ -1,8 +1,8 @@
 export default function Contact(props){
     return(
         <>
-<h1>Contact</h1>
  <div className="contact-container">
+<h1>Get in touch</h1>
  <div><a href="https://www.twitter.com/tpchant"><i className="fab fa-twitter" aria-label="twitter link"></i></a><span className="label">Follow me on Twitter</span></div>
  <div><a href="https://www.linkedin.com/in/thomaspchant/"><i className="fab fa-linkedin" aria-label="linked in link"></i></a><span className="label">Connect on LinkedIn</span></div>
  <div><a href="https://github.com/DoubleNemesis"><i className="fab fa-github" aria-label="guthub link"></i></a><span className="label">Find me on GitHub</span></div>
@@ -13,14 +13,14 @@ export default function Contact(props){
 .contact-container{
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem;
     margin: 0 auto;
     /* border: 1px solid red; */
 }
 
 .fab{
-    font-size: 2.2rem;
-    width: 3rem;
+    font-size: 1.4rem;
+    width: 2.8rem;
 }
 .fa-twitter{
     color: #55acee;
@@ -37,10 +37,23 @@ export default function Contact(props){
 
 .label{
     margin-left: 2rem;
-    /* border: 1px solid blue; */
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: 'Open Sans'
 }
+
+@media(min-width:1025px){
+    .contact-container{
+    padding: 2rem 2rem;
+}
+    .fab{
+    font-size: 2.2rem;
+    width: 3rem;
+}
+    .label{
+    font-size: 2rem;
+}  
+}
+
 `}</style>
 </>
     ) 

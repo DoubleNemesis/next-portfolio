@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react'
-
 export const Block = ({ children, ...props }) => {
     return (
         <div className="text-block">
@@ -14,7 +12,7 @@ export const Block = ({ children, ...props }) => {
                 max-width: 100%;
                 min-width: 100%;
                  }
-                 @media(min-width:1025px){
+                 @media(min-width:700px){
                     .text-block{
                         max-width: 25%;
                         min-width: 25%;   
@@ -25,26 +23,13 @@ export const Block = ({ children, ...props }) => {
     )
 }
 
-export default function AnimatedText({ message, bgColor }) {
+export default function TextBlock({ message, bgColor }) {
 
-    const [mess, setMess] = useState('')
-
-    useEffect(() => {
-        let counter = 0
-        const interval = setInterval(() => {
-            setMess(prev => prev + message[counter])
-            counter++
-            if (counter >= message.length) {
-                clearInterval(interval)
-            }
-        }, 20)
-        return () => clearInterval(interval)
-    }, [])
     return (
         <>
             <Block bgColor={bgColor}>
                 <div className="photo-block-text">
-                    <h3>{mess}</h3>
+                    <h3>{message}</h3>
                 </div>
             </Block>
             <style jsx>{`
@@ -54,10 +39,9 @@ export default function AnimatedText({ message, bgColor }) {
             width: 80%;
             height: 80%;  
             margin: 0 auto; 
-            /* transform: rotate(-30deg) */
         }
         .photo-block-text h3{
-            font-family: cursive;
+            font-family: 'Kalam';
             font-weight: 100;
             font-size: 1rem;
         }
