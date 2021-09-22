@@ -9,15 +9,6 @@ export default function Portfolio() {
         return (
             <>
                 <div className="project-block">{children}</div>
-                <style jsx>{`
-                .project-block{
-                    color: #333;
-                    width: auto;
-                    margin: 0;
-                    display: flex;
-                    flex-direction: column;
-                }
-            `}</style>
             </>
         )
     }
@@ -70,14 +61,16 @@ export default function Portfolio() {
                 max-width: 100%;
                 margin: 0 auto;
                 display: grid;
-                grid-gap: 0rem;
+                grid-gap: 1rem;
                 grid-template-columns: repeat(auto-fit, minmax(319.8px, 1fr));
-                padding: 0;
+                padding: 2rem 0;
+                background: #00acea;
             } 
             @media(min-width: 1025px){
                 .portfolio-container{
                 grid-template-columns: repeat(auto-fit, minmax(379.8px, 1fr));
-                padding: 0;
+                padding: 2rem 0;
+                gap: 1rem;
             } 
 }
             `}</style>

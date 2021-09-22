@@ -109,6 +109,7 @@ a {
   width: auto;
   perspective: 1000px;
   user-select: none;
+  margin-bottom: 0;
 }
 
 .flip-box-inner {
@@ -117,6 +118,7 @@ a {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin-bottom: 0;
 }
 
 .flip-box:hover .flip-box-inner {
@@ -126,9 +128,11 @@ a {
 .flip-box-front {
   color: black;
   box-sizing: border-box;
+  width: auto;
 }
 .flip-box-front img{
   width: 100%;
+  margin: 0;
   /* border-bottom: 1px solid whitesmoke; */
 }
 
@@ -137,11 +141,15 @@ a {
   transform: rotateY(180deg);
   padding: 1em;
   font-family: 'Open Sans';
+  margin-bottom: 0;
 }
 
 .portfolio-text{
   padding-left: 1rem;
-  border: 1px solid whitesmoke;
+  border: 1px solid transparent;
+  background-color: white;
+  width: 100%;
+  margin-top: 0;
   }
 
 .item-details{
@@ -149,6 +157,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin-top: 0;
 }
 
 .item-details i{

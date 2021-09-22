@@ -9,7 +9,7 @@ export default function Hero() {
                 <h2>Web Developer</h2>
                 <TechStack />
                 <ScrollButton 
-                destination="portfolio-scroll-target-two"
+                destination="portfolio-scroll-target"
                 text="View Projects"
                 />
                 <div id="portfolio-scroll-target"></div>

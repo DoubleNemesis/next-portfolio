@@ -55,7 +55,7 @@ useEffect(() => {
           <Hero/>
           </Section>
         <Section 
-        backgroundColor="white"
+        backgroundColor="#00acea"
         color="#333"
         height="unset">
           <Portfolio/>

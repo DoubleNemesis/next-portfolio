@@ -2,7 +2,7 @@ export default function SrollButton(props){
 
     function handleClick(){
         const destination = document.getElementById(props.destination)
-        destination.scrollIntoView({block: "center", inline: "nearest"})
+        destination.scrollIntoView({block: "start", inline: "nearest"})
     }
 
     return(
