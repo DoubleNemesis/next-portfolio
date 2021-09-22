@@ -1,8 +1,33 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import { useState, useEffect } from 'react'
 import blogData from '../data/blogData'
 
 export default function Vlog(props) {
+
+  const [isMobile, setIsMobile] = useState(false)
+  const mobileWidth = 700;
+
+  useEffect(() => {
+    console.log(window.screen.width)
+    if (window.screen.width <= mobileWidth) {
+      setIsMobile(true)
+    }
+  })
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= mobileWidth) {
+        setIsMobile(true)
+      }
+      else {
+        setIsMobile(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+  })
+
+
   const videosToDisplay = blogData['entries'].map((item, index) => {
     const srcToAdd = `https://www.youtube.com/embed/${item.embedCode}`
     return (
@@ -33,7 +58,7 @@ export default function Vlog(props) {
         <meta name="description" content="Thomas Chant Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header isMobile={props.isMobile} />
+      <Header isMobile={isMobile} />
       <main className="main-container">
         <section className="vlog-container">
           {videosToDisplay}
