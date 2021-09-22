@@ -55,10 +55,11 @@ export default function Header({isMobile}) {
         <header>
             <div className="container">
                 <div className="container-inner"></div>
-                <div className="logo-container">
-                    <h1>Thomas<span className="emphatic">P</span>Chant</h1>
+                <a href="/#top">   <div className="logo-container">
+                 <h1>Thomas<span className="emphatic">P</span>Chant</h1>
                     <h2><span className="emphatic">Web Developer</span></h2>
                 </div>
+                    </a>
                 <div className="header-text-container">
                 {!isMobile ? <SocialIcons/> : null}
                     <a href="/#hire-scroll-target">Hire Me</a>
@@ -143,8 +144,11 @@ export default function Header({isMobile}) {
     animation-delay: 0s;
 }
 
+
+
+.logo-container > a,
 .logo-container > h1,
-.logo-container > h2 {
+.logo-container > h2{
     padding: 0;
     margin: 0;
     line-height: 90%;
@@ -153,11 +157,11 @@ export default function Header({isMobile}) {
     font-weight: 700;
 }
 
-.logo-container > h1 {
+.logo-container > h1{
     font-size: clamp(.9rem, -0.875rem + 8.333vw, 1.6rem);
 }
 
-.logo-container > h2 {
+.logo-container > h2{
     font-size: clamp(.8rem, -0.875rem + 6.333vw, 1.4rem);
 }
 

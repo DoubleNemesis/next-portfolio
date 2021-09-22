@@ -48,7 +48,7 @@ useEffect(() => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Header isMobile={isMobile}/>
-    <main className={styles.main}>
+    <main className={styles.main} id="top">
         <Section 
         backgroundColor="midnightblue"
         color="white">

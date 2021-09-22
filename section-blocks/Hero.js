@@ -6,7 +6,7 @@ export default function Hero() {
         <>
             <div className="hero-container">
                 <h1>Thomas P Chant</h1>
-                <h2>Web Developer</h2>
+                <h2>Frontend Developer</h2>
                 <TechStack />
                 <ScrollButton 
                 destination="portfolio-scroll-target"
@@ -24,10 +24,15 @@ export default function Hero() {
                 align-items: center;
                 justify-content: center;
                 color: white;
+                padding-top: 3rem;
             }
             .hero-container h1 {
-                 font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
-            }          
+                font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
+            } 
+            @media(min-height: 700px){
+                padding-top: 0rem;
+
+            }         
             `}</style>
         </>
     )
