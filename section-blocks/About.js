@@ -21,7 +21,7 @@ export default function About() {
                 justify-content: center;
                 color: white;
                 /* border: 1px solid orange; */
-                padding: 0rem 2rem;
+                padding: 2rem 2rem;
             }
             .about-container h1{
                 font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);

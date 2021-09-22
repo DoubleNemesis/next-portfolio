@@ -1,3 +1,5 @@
+
+
 export default function Contact(props){
     return(
         <>
@@ -13,9 +15,8 @@ export default function Contact(props){
 .contact-container{
     display: flex;
     flex-direction: column;
-    padding: 6rem 2rem;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+    padding: 3rem 2rem;
+    margin: 0 2rem;
 }
 
 .fab{
@@ -41,6 +42,13 @@ export default function Contact(props){
     font-family: 'Open Sans'
 }
 
+@media(min-width:700px){
+    .contact-container{
+    padding: 2rem 2rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+}
 @media(min-width:1025px){
     .contact-container{
     padding: 2rem 2rem;

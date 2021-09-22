@@ -28,29 +28,32 @@ export default function PhotoBlock(props) {
 
     return (<>
         <div className="photo-block-holder" id="blocks">
-            <Image src={trees} layout="responsive" />
-            <Image src={cygnets} layout="responsive" />
-            <Image src={tom} layout="responsive"/>
+            <img className="hide-mobile" src="./trees.jpg" />
+            <img className="hide-mobile" src="./cygnets.jpg" />
+            <img src="./tom.png" />
             <TextBlock bgColor="skyblue" message="This is me trying to smile without looking creepy! When I'm not coding, I love wildlife and nature photography." />
         </div>
         <style jsx>{`
         .photo-block-holder{
             width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column-reverse;
         }
-        /* @media(min-width: 700px){
-            .photo-block-holder{
-            width: unset;
-            display: flex;
-            flex-direction: row;
-        }  */
+        .hide-mobile{
+            display:none;
+        }
         @media(min-width: 700px){
             .photo-block-holder{
             width: 100%;
             display: flex;
             flex-direction: row;
         } 
+            .photo-block-holder img{
+            width: 25%;
+        } 
+        .hide-mobile{
+            display:inline;
+        }
         }
 
         `}</style>

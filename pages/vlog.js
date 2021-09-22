@@ -40,7 +40,7 @@ export default function Vlog(props) {
           display: flex;
           flex-direction: column;
           width: 340px;
-          margin: 1rem;
+          margin: 1rem auto;
           border: 1px solid skyblue;
           padding: 1rem;
         }
@@ -75,12 +75,19 @@ export default function Vlog(props) {
               justify-content: center;
               background: darkblue;
               color: white;
+              /* border: 1px solid white; */
+              width: 100%;
             }
             .vlog-container{
               display: flex;
               flex-wrap: wrap;
               margin: 6rem auto 3rem auto;
+              width: 100%;
+            }
+            @media(min-width:1025px){
+              .vlog-container{
               width: 80%;
+            }
             }
             `}</style>
     </>

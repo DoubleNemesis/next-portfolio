@@ -32,7 +32,7 @@ export default function History() {
                 justify-content: center;
                 color: white;
                 /* border: 1px solid orange; */
-                padding: 6rem 2rem;
+                padding: 6rem 2rem 4rem 2rem;
             }
             .history-container h1{
                 font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
@@ -48,7 +48,7 @@ export default function History() {
             @media(min-width:1025px){
                 .history-container{
                 width: 60%;
-                padding: 5rem 2rem;
+                padding: 5rem 2rem 2rem 2rem;
             }
             }        
             `}</style>
