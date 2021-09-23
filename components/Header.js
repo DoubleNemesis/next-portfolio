@@ -128,6 +128,9 @@ export default function Header({isMobile}) {
 .hidden-menu ul{
          line-height: 180%;   
     }
+.hidden-menu ul a:hover{
+         color: #00acea;   
+    }
 .hidden-menu-burger-container{
     display: flex;
     align-items: center;
@@ -192,6 +195,9 @@ export default function Header({isMobile}) {
     .header-text-container > a {
     display: inline;
 }  
+    .header-text-container > a:hover {
+    color: #00acea;
+}  
 
 }
 
@@ -205,8 +211,8 @@ export default function Header({isMobile}) {
 
 .burger:hover,
 .burger-open:hover{
-    fill: skyblue;
-    color: skyblue;
+    fill: #00acea;
+    color: #00acea;
 }
 
 `}</style>

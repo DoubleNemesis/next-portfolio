@@ -12,6 +12,7 @@ import History from '../section-blocks/History'
 import PhotoBlock from '../section-blocks/PhotoBlock'
 import Contact from '../section-blocks/Contact'
 import HireMe from '../section-blocks/HireMe'
+import desk from '../public/desk.jpg'
 
 export default function Home() {
 
@@ -52,7 +53,7 @@ useEffect(() => {
         <Section 
         backgroundColor="midnightblue"
         color="white">
-          <Hero/>
+          <Hero bgImg={desk}/>
           </Section>
         <Section 
         backgroundColor="#00acea"

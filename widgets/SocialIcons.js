@@ -24,7 +24,7 @@ export default function SocialIcons(props) {
             font-size: 1.2rem;
         }
         .fab:hover{
-            color: skyblue;
+            color: #00acea;
         }
         @media(min-width: 1025px){
             .social-icons-container{
