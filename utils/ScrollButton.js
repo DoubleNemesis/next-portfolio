@@ -8,6 +8,7 @@ export default function SrollButton(props){
     return(
         <>
         <button className="scroll-btn" onClick={handleClick}>{props.text}<br/>&darr;</button>
+        <div id="portfolio-scroll-target"></div>
         <style jsx>{`
         .scroll-btn{
             background-color: transparent;

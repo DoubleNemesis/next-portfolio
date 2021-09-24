@@ -56,7 +56,7 @@ useEffect(() => {
           <Hero bgImg={desk}/>
           </Section>
         <Section 
-        backgroundColor="#00acea"
+        backgroundColor="#6DCFF3"
         color="#333"
         height="unset">
           <Portfolio/>

@@ -3,18 +3,25 @@ import ScrollButton from '../utils/ScrollButton'
 import desk from '../public/desk.jpg'
 
 export default function Hero(props) {
+
+    const name = `Thomas P Chant`
+    const headline = `<Frontend Developer/>`
+
     return (
         <>
             <div className="hero-overlay"></div>
-            <div className="hero-container">
-                <h1>Thomas P Chant</h1>
-                <h2>Frontend Developer</h2>
-                <TechStack />
-                <ScrollButton 
+            <div className="button-overlay">
+            <ScrollButton 
                 destination="portfolio-scroll-target"
                 text="View Projects"
                 />
-                <div id="portfolio-scroll-target"></div>
+            </div>
+            <div className="hero-container">
+                <h1>{name}</h1>
+                <h2>{headline}</h2>
+                <TechStack />
+
+
             </div>
             <style jsx>{`
             .hero-overlay{
@@ -28,7 +35,24 @@ export default function Hero(props) {
                 filter: grayscale(1);
                 min-height: 100%;
                 width: 100%; 
-                opacity: .1; 
+                opacity: .3;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding-bottom: 4rem; 
+                color: white;
+            }
+            .button-overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-height: 100%;
+                width: 100%; 
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding-bottom: 4rem; 
+                color: white;
             }
             .hero-container{
                 display: flex;

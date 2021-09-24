@@ -64,7 +64,7 @@ export default function Portfolio() {
                 grid-gap: 1rem;
                 grid-template-columns: repeat(auto-fit, minmax(319.8px, 1fr));
                 padding: 2rem 0;
-                background: #00acea;
+                background: #6DCFF3;
             } 
             @media(min-width: 1025px){
                 .portfolio-container{
