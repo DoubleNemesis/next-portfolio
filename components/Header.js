@@ -229,6 +229,14 @@ export default function Header({isMobile}) {
     color: #00acea;
 }
 
+@media(min-width: 1025px){
+.burger{
+    display: none;
+}
+}
+
+
+
 `}</style>
         </header>
     )
