@@ -76,6 +76,12 @@ export default function Header({isMobile}) {
                 <div className="hidden-menu-burger-container">
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
+                <a href="/#top">   <div className="logo-container">
+                 <h1>Thomas<span className="emphatic">P</span>Chant</h1>
+                    <h2><span className="emphatic">Web Developer</span></h2>
+                </div>
+                    </a>
+                    <br/>
                 <SocialIcons/>
                 <ul id="hidden-menu-list">
                     <li><a href="/#hire-scroll-target">Hire Me</a></li>
