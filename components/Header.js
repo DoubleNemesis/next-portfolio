@@ -76,11 +76,13 @@ export default function Header({isMobile}) {
                 <div className="hidden-menu-burger-container">
                     <button className="burger" onClick={rotateBurger}>{burgerIcon}</button>
                 </div>
-                <a href="/#top">   <div className="logo-container">
+ <div className="menu-logo">
+ <a href="/">   <div className="logo-container">
                  <h1>Thomas<span className="emphatic">P</span>Chant</h1>
                     <h2><span className="emphatic">Web Developer</span></h2>
                 </div>
                     </a>
+ </div>
                     <br/>
                 <SocialIcons/>
                 <ul id="hidden-menu-list">
@@ -144,6 +146,12 @@ export default function Header({isMobile}) {
     height: 6rem;
     width: 100%;
     padding-right: 2rem;
+}
+
+.menu-logo{
+    position: absolute;
+    top:0;
+    left:0;
 }
 
 .logo-container{
