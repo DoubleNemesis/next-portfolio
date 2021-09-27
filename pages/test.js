@@ -13,7 +13,7 @@ return(
 <Image src={green}/>
 <Image src={orange}/>
 <Image src={purple}/>
-<div>Here</div>
+<div className="pseudo-image">Here</div>
 </div>
 <style jsx>{`
 .image-block{
@@ -21,11 +21,20 @@ return(
     flex-direction: column;
     max-width: 100%;
 }
+.pseudo-image{
+    display: none;
+}
 @media(min-width: 700px){
     .image-block{
         flex-direction: row;
         max-width: 100%;
     }
+    .pseudo-image{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    background-color: red;
+}
 }
 `}</style>
 </div>
