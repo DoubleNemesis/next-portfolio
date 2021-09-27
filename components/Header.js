@@ -106,7 +106,8 @@ export default function Header({isMobile}) {
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
-    border-bottom: 1px solid #00acea;
+    /* border-bottom: 1px solid #00acea; */
+    border-bottom: ${!isScrolled ? '1px solid transparant' : '1px solid #00acea' };
 }
 
 .container-inner{
@@ -115,7 +116,7 @@ export default function Header({isMobile}) {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: ${!isScrolled ? 'transparant' : 'midnightblue' } ;
+    background-color: ${!isScrolled ? 'transparant' : 'rgb(30,30,74)' } ;
     z-index: -1;
 }
 

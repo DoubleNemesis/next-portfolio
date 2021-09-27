@@ -10,18 +10,16 @@ export default function Hero(props) {
     return (
         <>
             <div className="hero-overlay"></div>
-            <div className="button-overlay">
-            <ScrollButton 
-                destination="portfolio-scroll-target"
-                text="View Projects"
+            <div className="hero-text-layer">
+            <div className="hero-container">
+                <h1><span className="emphatic">Thomas</span>P<span className="emphatic">Chant</span></h1>
+                <h2><span className="emphatic">{headline}</span></h2>
+                <TechStack />
+                <ScrollButton
+                    destination="portfolio-scroll-target"
+                    text="View Projects"
                 />
             </div>
-            <div className="hero-container">
-                <h1>{name}</h1>
-                <h2>{headline}</h2>
-                <TechStack />
-
-
             </div>
             <style jsx>{`
             .hero-overlay{
@@ -32,26 +30,26 @@ export default function Hero(props) {
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                filter: grayscale(1);
+                filter: grayscale(1) brightness(.7);
                 min-height: 100%;
                 width: 100%; 
-                opacity: .3;
+                opacity: .5;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 padding-bottom: 4rem; 
                 color: white;
             }
-            .button-overlay{
+            .hero-text-layer{
                 position: absolute;
                 top: 0;
                 left: 0;
                 min-height: 100%;
                 width: 100%; 
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 justify-content: center;
-                padding-bottom: 4rem; 
+                padding-bottom: 0rem; 
                 color: white;
             }
             .hero-container{
@@ -60,17 +58,14 @@ export default function Hero(props) {
                 min-height: 100%;
                 width: 100%;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
                 color: white;
-                padding-top: 3rem;
+                /* border: 1px solid green; */
             }
             .hero-container h1 {
                 font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
             } 
-            @media(min-height: 700px){
-                padding-top: 0rem;
-
-            }         
+       
             `}</style>
         </>
     )

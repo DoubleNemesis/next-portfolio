@@ -20,6 +20,8 @@ export default function Home() {
 
   const mobileWidth = 700;
 
+  const bgColorDark = "rgb(30,30,74)"
+
   useEffect(()=>{
     console.log(window.screen.width)
     if(window.screen.width <= mobileWidth){
@@ -51,7 +53,7 @@ useEffect(() => {
     <Header isMobile={isMobile}/>
     <main className={styles.main} id="top">
         <Section 
-        backgroundColor="midnightblue"
+        backgroundColor={bgColorDark}
         color="white">
           <Hero bgImg={desk}/>
           </Section>
@@ -62,14 +64,14 @@ useEffect(() => {
           <Portfolio/>
           </Section>
         <Section 
-        backgroundColor="midnightblue"
+        backgroundColor={bgColorDark}
         color="white"
         height="unset">
           <History/>
           </Section>
           <PhotoBlock isMobile={isMobile}/>
         <Section 
-        backgroundColor="midnightblue"
+        backgroundColor={bgColorDark}
         color="white"
         height="unset">
           <About/>
@@ -81,7 +83,7 @@ useEffect(() => {
           <Contact/>
           </Section>
         <Section 
-        backgroundColor="midnightblue"
+        backgroundColor={bgColorDark}
         color="white"
         height="unset">
           <HireMe/>
