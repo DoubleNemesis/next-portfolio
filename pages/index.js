@@ -58,7 +58,7 @@ useEffect(() => {
           <Hero bgImg={desk}/>
           </Section>
         <Section 
-        backgroundColor="#6DCFF3"
+        backgroundColor="white"
         color="#333"
         height="unset">
           <Portfolio/>
@@ -88,8 +88,6 @@ useEffect(() => {
         height="unset">
           <HireMe/>
           </Section>
-
-
       </main>
 
       <Footer/>

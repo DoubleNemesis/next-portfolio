@@ -33,7 +33,7 @@ export default function Hero(props) {
                 filter: grayscale(1) brightness(.7);
                 min-height: 100%;
                 width: 100%; 
-                opacity: .5;
+                opacity: .2;
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;

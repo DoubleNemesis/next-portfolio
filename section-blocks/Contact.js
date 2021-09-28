@@ -51,7 +51,7 @@ export default function Contact(props){
 }
 @media(min-width:1025px){
     .contact-container{
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
 }
     .fab{
     font-size: 2.2rem;
