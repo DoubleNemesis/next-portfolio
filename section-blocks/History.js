@@ -19,7 +19,7 @@ export default function History() {
                 <ul>
                     <li>Organising high-level classes and excursions/activities for groups throughout the Southwest. </li>
                 </ul>
-                <div id="about-scroll-target"></div>
+                <div id="hire-scroll-target"></div>
             </div>
             
             <style jsx>{`

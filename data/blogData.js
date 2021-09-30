@@ -1,6 +1,13 @@
 let data = {
     'entries':[
     {
+        'key': 8,
+        'name': `Recoil for React`,
+        'type': 'YouTube Video',
+        'embedCode': 'KIuXU4s2OyA',
+        'teaser': `Recoil State Management for React.`,
+    },
+    {
         'key': 7,
         'name': `Custom Hooks in React`,
         'type': 'YouTube Video',

@@ -31,7 +31,7 @@ export default function PhotoBlock(props) {
             <img className="hide-mobile" src="./trees.jpg" />
             <img className="hide-mobile" src="./cygnets.jpg" />
             <img src="./tom.png" />
-            <TextBlock bgColor="#00acea" message="This is me trying to smile without looking creepy! When I'm not coding, I love wildlife and nature photography." />
+            <TextBlock bgColor="white" message="This is me trying to smile without looking creepy! When I'm not coding, I love wildlife and nature photography." />
         </div>
         <style jsx>{`
         .photo-block-holder{

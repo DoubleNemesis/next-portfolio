@@ -69,7 +69,12 @@ useEffect(() => {
         height="unset">
           <History/>
           </Section>
-          <PhotoBlock isMobile={isMobile}/>
+          <Section 
+        backgroundColor="white"
+        color="#333"
+        height="unset">
+          <HireMe/>
+          </Section>
         <Section 
         backgroundColor={bgColorDark}
         color="white"
@@ -81,12 +86,6 @@ useEffect(() => {
         color="#333"
         height="unset">
           <Contact/>
-          </Section>
-        <Section 
-        backgroundColor={bgColorDark}
-        color="white"
-        height="unset">
-          <HireMe/>
           </Section>
       </main>
 

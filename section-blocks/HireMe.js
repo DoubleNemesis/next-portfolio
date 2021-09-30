@@ -2,7 +2,7 @@ export default function HireMe() {
     return (
         <>
             <div className="hire-container">
-            <h1>Hire Me</h1>
+            <h1>I'm also available for freelance work</h1>
                 <p>
                     Whether you need to make some small adjustments to your existing website or want to start from scratch with a whole new web-application, I can help.
                 </p>
@@ -13,16 +13,19 @@ export default function HireMe() {
                     <li>Search Engine Optimisation</li>
                     <li>Copywriting</li>
                 </ul>
+                <div id="about-scroll-target"></div>
             </div>
+
             <style jsx>{`
         .hire-container{
             display: flex;
             flex-direction: column;
             padding: 2rem 2rem;
             margin: 0 auto;
-            border: 1px solid white;
+            border: 1px solid #333;
             max-width: 90%;
             margin: 2rem;
+            border-radius: 3px;
         }
         @media(min-width:1025px){
             .hire-container{

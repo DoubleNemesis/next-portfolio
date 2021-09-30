@@ -1,7 +1,8 @@
-tidy up mobile nav on about / work more vertical padding
-hero image
-photo block text change
-mobile photoblocks
+change about: two sections#: photo and text
+contact - slide in on view
+hero slide in/type
+add open source stuff right under portfolio - links to git hub
+
 check links
 
 
